@@ -21,6 +21,9 @@ async function apiRequest() {
     document.getElementById("characterParents").innerText = data.parents;
     document.getElementById("characterBlood").innerText = data.bloodStatus;
     document.getElementById("characterChildren").innerText = data.children;
+
+    document.getElementById("characterImage").src = data.image;
+    document.getElementById("characterCaption").innerText = data.name;
   } catch (error) {
     console.log(error);
   }
